@@ -1,9 +1,15 @@
-/// <reference types="react" />
+import { Component } from 'react';
 type propTypes = {
     onSelected: (selected: number) => void;
     icons?: Array<any>;
     iconSize?: number;
     scaleFactor?: number;
 };
-export declare function EmojiRating(props: propTypes): JSX.Element;
+type stateTypes = {
+    selected: number;
+};
+export declare class EmojiRating extends Component<propTypes, stateTypes> {
+    state: stateTypes;
+    render(): JSX.Element;
+}
 export {};
