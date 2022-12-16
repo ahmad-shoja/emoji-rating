@@ -1,0 +1,1 @@
+A react-js component that provide an animated emoji based rating as following.
