@@ -68,7 +68,7 @@ function AnimatedEmoji(
       <Lottie options={config}
               height={props.size ?? 64}
               width={props.size ?? 64}
-              isStopped={!props.selected || !active}/>
+              isStopped={!props.selected && !active}/>
     </div>
   )
 }
