@@ -1,6 +1,6 @@
 {
   "name": "emoji-rating-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "dependencies": {
     "@types/react-lottie": "^1.2.6",
     "react-lottie": "^1.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmad-shoja/emoji-rating.git"
   }
 }
