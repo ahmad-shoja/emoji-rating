@@ -9,19 +9,14 @@ import warmSmile from './../assets/warm_smile.json'
 import AnimatedEmoji from "./AnimatedEmoji";
 
 type propTypes = {
+  selected: number
   onSelected: (selected: number) => void,
   icons?: Array<any>,
   iconSize?: number,
   scaleFactor?: number
 }
-type stateTypes = {
-  selected: number
-}
 
-export class EmojiRating extends Component<propTypes, stateTypes> {
-  state: stateTypes = {
-    selected: -1
-  }
+export class EmojiRating extends Component<propTypes, {}> {
 
   render() {
     const {onSelected, iconSize, scaleFactor} = this.props
@@ -36,10 +31,9 @@ export class EmojiRating extends Component<propTypes, stateTypes> {
     return (
       <div style={{display: 'flex', justifyContent: 'start', flexFlow: 'row'}}>
         {icons.map((icon, index) =>
-          <AnimatedEmoji selected={this.state.selected == index} lottie={icon} size={this.props.iconSize}
+          <AnimatedEmoji selected={this.props.selected == index} lottie={icon} size={iconSize}
                          onClick={() => {
                            onSelected(index)
-                           this.setState({selected: index})
                          }}/>)}
       </div>
     );
