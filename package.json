@@ -1,6 +1,6 @@
 {
   "name": "emoji-rating-component",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ahmad-shoja/emoji-rating.git"
-  }
+  },
+  "keywords":[
+    "lottie","emoji","rating","react","hover","animated","type"
+  ]
 }
